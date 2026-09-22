@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A-1CleanerZ123 LLC | Cleaning, Maintenance & Flooring in Owensboro, KY</title>
+  <meta name="description" content="A-1CleanerZ123 LLC provides professional cleaning, property maintenance, flooring, tile, pressure washing, and turnover services in Owensboro, KY and nearby communities." />
+  <meta name="keywords" content="Owensboro KY cleaning, property maintenance, flooring, pressure washing, rental make-ready, house cleaning, tile installation, Owensboro contractor" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://a1cleanerz123.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="A-1CleanerZ123 LLC" />
+  <meta property="og:description" content="Cleaning, maintenance, flooring, and pressure washing services in Owensboro, KY." />
+  <meta property="og:url" content="https://a1cleanerz123.com" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80" />
+  <meta name="theme-color" content="#f1b80d" />
+
+  <style>
+    :root {
+      --primary: #f1b80d;
+      --primary-dark: #d59b00;
+      --dark: #0a0a0a;
+      --card: #111315;
+      --panel: #181b1f;
+      --text: #f5f5f5;
+      --muted: #bdbdbd;
+      --line: #2b2929;
+      --red: #b91c1c;
+      --success: #22c55e;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #050505;
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1200px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .top-bar {
+      background: linear-gradient(90deg, #800d0d 0%, #b91c1c 100%);
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.25);
+    }
+
+    .top-bar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      padding: 12px 0;
+      flex-wrap: wrap;
+    }
+
+    .top-nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .top-nav a {
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: white;
+      opacity: 0.92;
+    }
+
+    .top-nav a:hover {
+      color: var(--primary);
+    }
+
+    .top-call {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: transparent;
+      border: 2px solid rgba(255,255,255,0.9);
+      color: white;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-weight: 700;
+    }
+
+    .hero {
+      position: relative;
+      background:
+        linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.8)),
+        url("https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1800&q=80") center/cover no-repeat;
+      padding: 110px 0 80px;
+      border-bottom: 5px solid var(--primary);
+    }
+
+    .hero-inner {
+      text-align: center;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .brand-box {
+      display: inline-block;
+      margin-bottom: 20px;
+      background: rgba(0,0,0,0.45);
+      border: 3px solid var(--primary);
+      padding: 18px 34px;
+      border-radius: 6px;
+    }
+
+    .brand-box h1 {
+      margin: 0;
+      font-size: clamp(2.3rem, 5vw, 5rem);
+      font-weight: 900;
+      color: var(--primary);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1.2rem, 2vw, 2rem);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin: 10px 0 18px;
+    }
+
+    .hero-tags {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      color: var(--muted);
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    .hero-tags span {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .hero-tags i {
+      color: var(--primary);
+    }
+
+    .ribbon {
+      display: inline-block;
+      background: linear-gradient(135deg, #b91c1c 0%, #6c1010 100%);
+      color: white;
+      font-size: 1.05rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 12px 30px;
+      border-radius: 999px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      margin-bottom: 28px;
+    }
+
+    .hero-cta {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: var(--primary);
+      color: #111;
+      padding: 16px 28px;
+      border-radius: 6px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      transition: 0.2s ease;
+    }
+
+    .button:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    .button.secondary {
+      background: transparent;
+      color: white;
+      border: 2px solid var(--primary);
+    }
+
+    .service-grid {
+      background: #000;
+      padding: 72px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .section-header h2 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 3vw, 3rem);
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .section-header p {
+      margin: 0 auto;
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .service-grid-inner {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 26px;
+      margin-top: 30px;
+    }
+
+    .service-box {
+      background: var(--card);
+      border-top: 4px solid var(--primary);
+      padding: 28px 22px;
+      text-align: center;
+      border-radius: 0 0 10px 10px;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+      transition: transform 0.25s ease;
+    }
+
+    .service-box:hover {
+      transform: translateY(-6px);
+    }
+
+    .service-box i {
+      font-size: 2.6rem;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .service-box h3 {
+      margin: 0 0 10px;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .service-box p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .pricing {
+      background: #0d0f12;
+      padding: 72px 0;
+      border-top: 2px solid #1d1d1d;
+      border-bottom: 2px solid #1d1d1d;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 24px;
+      margin-top: 32px;
+    }
+
+    .price-card {
+      background: var(--card);
+      border: 1px solid #2a2d2f;
+      border-radius: 10px;
+      padding: 26px 22px;
+    }
+
+    .price-card h3 {
+      margin: 0 0 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--red);
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 1.2rem;
+    }
+
+    .price-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .price-card li {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      color: #f0f0f0;
+      font-size: 0.98rem;
+    }
+
+    .price-card li:last-child {
+      border-bottom: none;
+    }
+
+    .price-card span:last-child {
+      color: var(--primary);
+      font-weight: 800;
+    }
+
+    .packages {
+      background: #070909;
+      padding: 72px 0;
+    }
+
+    .package-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+      margin-top: 32px;
+    }
+
+    .package {
+      background: linear-gradient(180deg, #181b1f 0%, #101214 100%);
+      border-radius: 12px;
+      border-top: 4px solid;
+      padding: 26px 22px;
+      text-align: center;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+    }
+
+    .package.bronze { border-top-color: #cd7f32; }
+    .package.silver { border-top-color: #c0c0c0; }
+    .package.gold { border-top-color: #ffd700; }
+
+    .package h4 {
+      margin: 0 0 8px;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .package .price-tag {
+      display: block;
+      font-size: 2.1rem;
+      font-weight: 900;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .package ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 20px;
+      color: var(--muted);
+    }
+
+    .package li {
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .package li:last-child {
+      border-bottom: none;
+    }
+
+    .about {
+      background: #0d0f12;
+      padding: 72px 0;
+    }
+
+    .about-wrap {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .about-card {
+      background: var(--card);
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+    }
+
+    .about-card h3 {
+      margin: 0 0 18px;
+      color: var(--primary);
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .about-card p {
+      color: var(--muted);
+      margin: 0 0 16px;
+      font-size: 1.02rem;
+    }
+
+    .about-stats {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(120px, 1fr));
+      gap: 18px;
+      margin-top: 22px;
+    }
+
+    .stat {
+      background: #181b1f;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px 14px;
+      text-align: center;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.9rem;
+      color: var(--primary);
+      line-height: 1.2;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .about-image {
+      min-height: 420px;
+      border-radius: 10px;
+      background:
+        linear-gradient(rgba(0,0,0,0.28), rgba(0,0,0,0.28)),
+        url("https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=1200&q=80") center/cover no-repeat;
+      border: 1px solid var(--line);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.18);
+    }
+
+    .contact {
+      background: #050505;
+      padding: 72px 0 90px;
+    }
+
+    .contact-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 26px;
+      align-items: stretch;
+    }
+
+    .contact-card {
+      background: var(--card);
+      padding: 26px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+    }
+
+    .contact-card h3 {
+      margin: 0 0 18px;
+      color: var(--primary);
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .contact-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 14px;
+      color: var(--muted);
+    }
+
+    .contact-list strong {
+      color: white;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    form {
+      display: grid;
+      gap: 14px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 14px 16px;
+      border-radius: 8px;
+      border: 1px solid #2d3137;
+      background: #111315;
+      color: white;
+      font: inherit;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 130px;
+    }
+
+    .submit-btn {
+      border: none;
+      cursor: pointer;
+      width: fit-content;
+      padding: 14px 24px;
+      border-radius: 8px;
+      background: var(--primary);
+      color: #101010;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    footer {
+      background: #0c0d0f;
+      border-top: 1px solid var(--line);
+      padding: 24px 0;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    @media (max-width: 760px) {
+      .about-wrap, .contact-wrap {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 90px;
+      }
+
+      .hero-tags {
+        gap: 12px;
+        font-size: 0.92rem;
+      }
+
+      .top-bar-inner {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#packages">Packages</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="top-call" href="tel:+1-000-000-0000">Call Now</a>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="container hero-inner">
+      <div class="brand-box">
+        <h1>A-1CleanerZ123</h1>
+      </div>
+
+      <div class="hero-subtitle">Maintenance • Cleaning • Flooring • Pressure Washing</div>
+
+      <div class="hero-tags">
+        <span><i>✔</i> Owensboro, KY</span>
+        <span><i>✔</i> Reliable Local Service</span>
+        <span><i>✔</i> Professional Results</span>
+      </div>
+
+      <div class="ribbon">Your Property, Restored to Ready</div>
+
+      <div class="hero-cta">
+        <a class="button" href="#contact">Request a Quote</a>
+        <a class="button secondary" href="tel:+1-000-000-0000">Call Today</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="service-grid" id="services">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Services</h2>
+          <p>We deliver dependable cleaning, flooring, maintenance, and exterior care for homes, rentals, and commercial spaces across Owensboro and the surrounding area.</p>
+        </div>
+
+        <div class="service-grid-inner">
+          <article class="service-box">
+            <i>🧼</i>
+            <h3>Turnover Cleaning</h3>
+            <p>Move-in and move-out cleaning that helps properties look fresh, polished, and ready for the next tenant or buyer.</p>
+          </article>
+
+          <article class="service-box">
+            <i>🧱</i>
+            <h3>Flooring & Tile</h3>
+            <p>Floor repairs, vinyl plank installation, tile work, and surface upgrades to improve the appearance and value of your property.</p>
+          </article>
+
+          <article class="service-box">
+            <i>🏠</i>
+            <h3>Property Maintenance</h3>
+            <p>General repairs, upkeep, and property readiness services that keep homes and rentals in top condition.</p>
+          </article>
+
+          <article class="service-box">
+            <i>💦</i>
+            <h3>Pressure Washing</h3>
+            <p>Exterior cleaning for driveways, sidewalks, siding, patios, and other high-traffic areas that need a deeper clean.</p>
+          </article>
+
+          <article class="service-box">
+            <i>🛠️</i>
+            <h3>Rental Make-Ready</h3>
+            <p>Fast, professional make-ready services for landlords and property managers preparing units for occupancy.</p>
+          </article>
+
+          <article class="service-box">
+            <i>🏢</i>
+            <h3>Commercial Cleaning</h3>
+            <p>Reliable cleaning support for offices, storefronts, and workspaces that need a clean and professional appearance.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <div class="container">
+        <div class="section-header">
+          <h2>Service Pricing</h2>
+          <p>Transparent rates for high-quality work and dependable results.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="price-card">
+            <h3>Cleaning</h3>
+            <ul>
+              <li><span>Deep Clean</span><span>From $149</span></li>
+              <li><span>Turnover Clean</span><span>From $179</span></li>
+              <li><span>Recurring Cleaning</span><span>Custom</span></li>
+              <li><span>Move-In / Move-Out</span><span>From $199</span></li>
+            </ul>
+          </div>
+
+          <div class="price-card">
+            <h3>Flooring</h3>
+            <ul>
+              <li><span>Vinyl Plank Install</span><span>From $2.50/sq ft</span></li>
+              <li><span>Tile Work</span><span>From $5.00/sq ft</span></li>
+              <li><span>Floor Repair</span><span>Custom Quote</span></li>
+              <li><span>Trim & Finish</span><span>Custom Quote</span></li>
+            </ul>
+          </div>
+
+          <div class="price-card">
+            <h3>Pressure Washing</h3>
+            <ul>
+              <li><span>Driveway</span><span>From $79</span></li>
+              <li><span>House Exterior</span><span>From $149</span></li>
+              <li><span>Patio / Deck</span><span>From $89</span></li>
+              <li><span>Sidewalks</span><span>From $59</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="packages" id="packages">
+      <div class="container">
+        <div class="section-header">
+          <h2>Popular Packages</h2>
+          <p>Flexible options designed to help landlords, homeowners, and property managers stay ahead of maintenance and cleaning needs.</p>
+        </div>
+
+        <div class="package-grid">
+          <div class="package bronze">
+            <h4>Bronze</h4>
+            <span class="price-tag">$149</span>
+            <ul>
+              <li>Basic Cleaning</li>
+              <li>Surface Wipe Down</li>
+              <li>Bathroom Refresh</li>
+              <li>Kitchen Reset</li>
+            </ul>
+            <a class="button" href="#contact">Book Now</a>
+          </div>
+
+          <div class="package silver">
+            <h4>Silver</h4>
+            <span class="price-tag">$249</span>
+            <ul>
+              <li>Deep Cleaning</li>
+              <li>Floor Care</li>
+              <li>Pressure Wash Add-On</li>
+              <li>Property Touch-Ups</li>
+            </ul>
+            <a class="button" href="#contact">Book Now</a>
+          </div>
+
+          <div class="package gold">
+            <h4>Gold</h4>
+            <span class="price-tag">$399</span>
+            <ul>
+              <li>Full Turnover Package</li>
+              <li>Flooring & Detail Work</li>
+              <li>Exterior Refresh</li>
+              <li>Priority Scheduling</li>
+            </ul>
+            <a class="button" href="#contact">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-wrap">
+        <div class="about-card">
+          <h3>About A-1CleanerZ123</h3>
+          <p>A-1CleanerZ123 LLC is a local service company dedicated to quality workmanship, dependable scheduling, and clean, move-in-ready results for residential and rental properties.</p>
+          <p>From flooring and tile to pressure washing and turnover cleaning, we focus on the details that make a property look cared for, rentable, and market-ready.</p>
+
+          <div class="about-stats">
+            <div class="stat">
+              <strong>100%</strong>
+              <span>Local Service</span>
+            </div>
+            <div class="stat">
+              <strong>24/7</strong>
+              <span>Quote Requests</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-image" aria-label="Property maintenance service work"></div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>Request a Free Quote</h2>
+          <p>Tell us about your project and we’ll help with a quick estimate and next steps.</p>
+        </div>
+
+        <div class="contact-wrap">
+          <div class="contact-card">
+            <h3>Get In Touch</h3>
+            <ul class="contact-list">
+              <li>
+                <div><strong>Phone</strong> (000) 000-0000</div>
+              </li>
+              <li>
+                <div><strong>Email</strong> info@a1cleanerz123.com</div>
+              </li>
+              <li>
+                <div><strong>Location</strong> Owensboro, Kentucky</div>
+              </li>
+              <li>
+                <div><strong>Service Area</strong> Daviess County and surrounding communities</div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-card">
+            <h3>Send a Message</h3>
+            <form action="#" method="post">
+              <input type="text" name="name" placeholder="Your Name" />
+              <input type="email" name="email" placeholder="Your Email" />
+              <input type="text" name="phone" placeholder="Phone Number" />
+              <textarea name="message" placeholder="Tell us about your project..."></textarea>
+              <button class="submit-btn" type="submit">Send Request</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2025 A-1CleanerZ123 LLC • Owensboro, Kentucky
+    </div>
+  </footer>
+</body>
+</html>
