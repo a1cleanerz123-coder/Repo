@@ -1,20 +1,17 @@
 # A-1CleanerZ123 LLC
 
-Professional cleaning, maintenance, flooring, and pressure washing services for Owensboro, Kentucky and surrounding communities.
+A-1CleanerZ123 LLC is a local Owensboro, Kentucky service business focused on reliable cleaning, property maintenance, flooring solutions, and pressure washing for homeowners, landlords, and property managers.
 
-## Services
-- Residential and commercial cleaning
-- Floor installation and repairs
-- Tile and flooring upgrades
-- Property maintenance and make-ready services
-- Exterior pressure washing
-- Turnover and move-in / move-out cleaning
+## Included on the site
+- Pricing calculator for customer estimates
+- Service pricing chart
+- About section
+- Customer testimonials
+- Contact details and quote request form
 
-## Coverage Area
-Owensboro, KY · Daviess County · Surrounding areas
+## Service area
+Owensboro, KY and surrounding communities
 
-## Website
-Open the `index.html` file in a browser to view the live landing page.
-
-## Notes
-This project is a branded local business marketing site for A-1CleanerZ123 LLC, created to highlight service offerings, pricing, packages, and contact information.
+## Contact
+Phone: (270) 220-2327
+Website: https://a1cleanerz123.com
